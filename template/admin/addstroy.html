@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/biaoge.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="panel">
+    <form action="addstroy.php" method="post" enctype="multipart/form-data">
+        <!--下拉框-->
+        <div class="forngroup">
+            <label for="">父级栏目</label>
+            <!--父栏目的id-->
+            <select name="pid" id="">
+                <option value="0">一级栏目</option>
+                <?php echo $option?>
+            </select>
+        </div>
+        <div class="forngroup">
+            <label for="">故事头像</label>
+            <input type="file" name="strtou" >
+        </div>
+        <div class="forngroup">
+            <label for="">故事标题</label>
+            <input type="text" name="strtitle" placeholder="故事标题">
+        </div>
+        <div class="forngroup">
+            <label for="">故事内容</label>
+            <textarea  name="strcent" placeholder="故事内容"> </textarea>
+        </div>
+        <div class="forngroup">
+            <label for="">前</label>
+            <input type="file" name="qian" >
+        </div>
+        <div class="forngroup">
+            <label for="">后</label>
+            <input type="file" name="hou" >
+        </div>
+        <div class="forngroup">
+            <label for="">左</label>
+            <input type="file" name="leftpho" >
+        </div>
+        <div class="forngroup">
+            <label for="">右</label>
+            <input type="file" name="rightpho" >
+        </div><div class="forngroup">
+        <label for="">上</label>
+        <input type="file" name="top" >
+    </div>
+        <div class="forngroup">
+            <label for="">下</label>
+            <input type="file" name="bottom" >
+        </div>
+        <div class="forngroup">
+            <label for="">父栏目</label>
+            <input type="text" name="cid" placeholder="父极栏目">
+        </div>
+        <div class="forngroup">
+            <input type="submit" name="sub" value="提交">
+        </div>
+    </form>
+</div>
+</body>
+</html>

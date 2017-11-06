@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/biaoge.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="panel">
+    <form action="updatayouqing.php" method="post">
+        <!--下拉框-->
+        <div class="forngroup">
+            <label for="">父级栏目</label>
+            <!--父栏目的id-->
+            <select name="cid" id="" >
+                <?php echo $lanmu?>
+            </select>
+        </div>
+        <div class="forngroup">
+            <label for="">栏目id</label>
+            <input type="text" name="yid" placeholder="栏目id" value="<?php echo $yid?>">
+        </div>
+        <div class="forngroup">
+            <label for="">主页内容</label>
+            <input type="text" name="ymain" placeholder="主页内容" value="<?php echo $ymain;?>">
+        </div>
+        <div class="forngroup">
+            <label for="">banner英文标题</label>
+            <input type="text" name="yxiao" placeholder="banner英文标题" value="<?php echo $yxiao;?>">
+        </div>
+        <div class="forngroup">
+            <label for="">banner内容</label>
+            <input type="text" name="ychina" placeholder="banner内容" value="<?php echo $ychina;?>">
+        </div>
+        <div class="forngroup">
+            <label for="">banner英文内容</label>
+            <input type="text" name="yeng" placeholder="banner英文内容" value="<?php echo $yeng;?>">
+        </div>
+        <div class="forngroup">
+            <img src="<?php echo $yimg;?>" alt="">
+        </div>
+        <div class="forngroup">
+            <label for="">banner图</label>
+            <input type="file" name="yimg">
+        </div>
+        <div class="forngroup">
+            <input type="submit" name="sub" value="提交">
+        </div>
+    </form>
+</div>
+</body>
+</html>

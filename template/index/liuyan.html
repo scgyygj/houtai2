@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我们的故事</title>
+    <link rel="stylesheet" href="/project/static/css/liuyan.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="/project/static/js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<header>
+    <div class="leftTop">
+        <div></div>
+        <h1>FriendShip</h1>
+    </div>
+    <ul class="rightTop">
+        <li><a href="index1.html"><div class="iconfont icon-xiatubiao--copy"></div><p>首页</p></a></li>
+        <li><a href="youqing.html"><div class="iconfont icon-youqing"></div><p>友情篇</p></a></li>
+        <li><a href="aiqing.html"><div class="iconfont icon-2"></div><p>爱情篇</p></a></li>
+        <li><a href="qinqing.html"><div class="iconfont icon-qinqing"></div><p>亲情篇</p></a></li>
+        <!--<li><a href=""><div></div><p>Sing</p></a></li>-->
+        <!--<li><a href=""><div></div><p>Home</p></a></li>-->
+    </ul>
+</header>
+<!--头部结束-->
+<hr>
+<!--导航开始-->
+<section class="daohang">
+<ul class="daohang-left">
+    <!--<li><a href="">友情篇</a></li>-->
+    <li><a href="">我们的故事</a></li>
+    <li><a href="liuyan.html">留言薄</a></li>
+    <li><a href="photo1.html">照片墙</a></li>
+    <li><a href="">时光机</a></li>
+    <li><a href="">尽情唱吧</a></li>
+    <!--<li><a href="">周作品</a></li>-->
+    <!--<li><a href="">新闻中心</a></li>-->
+</ul>
+
+</section>
+<!--导航结束-->
+
+<!--banner开始-->
+<section class="banner">
+    <img src="../static/img/2017-10-15_142644.png" alt="">
+</section>
+<!--banner结束-->
+<!--客户好评开始-->
+<section class="haoping">
+<div class="haoping-top">
+    <div class="haoping-top-left"></div>
+    <div class="haoping-top-mid">我们的故事</div>
+    <div class="haoping-top-right"></div>
+</div>
+<ul class="haoping-bottom">
+
+    <?php
+       for($i=0;$i<count($data);$i++){
+?>
+    <li><a href="javascript:;">
+        <div class="haoping-left">
+            <img src="<?php echo $data[$i]['strtou'];?>" alt="">
+        </div>
+        <div class="haoping-right">
+            <h3><?php echo $data[$i]['strtitle'];?></h3>
+            <p><?php echo $data[$i]['strcent'];?></p>
+        </div>
+    </a></li>
+<?php }
+?>
+
+</ul>
+
+
+<ul class="yema">
+    <li><a href="">共18页</a></li>
+    <li><a href="">1</a></li>
+    <li><a href="">2</a></li>
+    <li><a href="">3</a></li>
+    <li><a href="">4</a></li>
+    <li><a href="">5</a></li>
+    <li><a href="">6</a></li>
+    <li><a href="">7</a></li>
+    <li><a href="">8</a></li>
+    <li><a href="">9</a></li>
+    <li><a href="">下一页</a></li>
+    <li><a href="">尾页</a></li>
+</ul>
+</section>
+<!--客户好评结束-->
+<!--底部导航开始-->
+<section class="didaohang">
+
+</section>
+<!--底部导航结束-->
+<!--底部开始-->
+<footer>
+
+</footer>
+<script src="/project/static/js/jquery-3.2.1.js"></script>
+<script src="/project/static/js/liuyan.js"></script>
+<!--底部结束-->
+</body>
+</html>

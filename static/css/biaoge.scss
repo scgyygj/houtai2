@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+
+}
+form{
+  border: 2px solid #316794;
+  padding: 15px;
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  overflow: auto;
+>option{
+  width: 100%;
+  height: 30px;
+}
+.forngroup{
+  width: 100%;
+  height: auto;
+  >textarea{
+    width: 300px;
+    height: 100px;
+    text-overflow: ellipsis;
+  }
+  >label{
+    display: block;
+    font-size: 14px;
+    color: #555555;
+    padding: 5px 0px ;
+  }
+  >input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #445656;
+    margin: 10px 0px;
+  }
+  >input:focus{
+    outline: none;
+  }
+>.sub{
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+}
+}
+img{
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+p{
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+  overflow: hidden;
+}

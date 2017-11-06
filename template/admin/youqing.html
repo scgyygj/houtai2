@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/biaoge.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="panel">
+    <form action="youqing.php" method="post" enctype="multipart/form-data">
+        <!--下拉框-->
+        <div class="forngroup">
+            <label for="">父级栏目</label>
+            <!--父栏目的id-->
+            <select name="pid" id="">
+                <option value="0">一级栏目</option>
+                <?php echo $option?>
+            </select>
+        </div>
+        <div class="forngroup">
+            <label for="">首页</label>
+            <textarea name="ymain" placeholder="首页" ></textarea>
+        </div>
+        <div class="forngroup">
+            <label for="">小标题</label>
+            <input type="text" name="yxiao" placeholder="小标题" >
+        </div>
+        <div class="forngroup">
+            <label for="">中文描述</label>
+            <input type="text" name="ychina" placeholder="中文描述" >
+        </div>
+        <div class="forngroup">
+            <label for="">英文描述</label>
+            <input type="text" name="yeng" placeholder="英文描述" >
+        </div>
+        <div class="forngroup">
+            <input type="file" name="yimg" >
+        </div>
+        <div class="forngroup">
+            <input type="submit" name="sub" class="sub" value="提交">
+        </div>
+
+</form>
+</div>
+</body>
+</html>

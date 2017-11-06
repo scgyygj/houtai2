@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/project/static/css/photo1.css">
+    <title>照片墙</title>
+    <script src="/project/static/js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<!-- 导航-->
+<div class="topdao"></div>
+<ul class="topdaohang">
+
+    <li><a href="qinqing.html">亲情篇</a></li>
+    <li><a href="aiqing.html">爱情篇</a></li>
+    <li><a href="youqing.html">友情篇</a></li>
+
+    <li><a href="index1.html">首页</a></li>
+</ul>
+<h2 class="title">Photo Wall</h2>
+<div class="big">
+    <ul class="bigImg">
+        <?php
+      for($i=0;$i<count($data);$i++){
+?>
+
+        <li>
+            <div class="left">
+                <img src="<?php echo $data[$i]['leftpho'];?>" alt="">
+            </div>
+            <div class="right">
+                <img src="<?php echo $data[$i]['rightpho'];?>" alt="">
+            </div>
+            <div class="top">
+                <img src="<?php echo $data[$i]['qian'];?>" alt="">
+            </div>
+            <div class="bottom">
+                <img src="<?php echo $data[$i]['hou'];?>" alt="">
+            </div>
+            <div class="front">
+                <div class="opact">
+                    <a href="">
+                    <div>
+                        <h2><?php echo $data[$i]['strtitle'];?></h2>
+                        <hr>
+                        <p><?php echo $data[$i]['strcent'];?></p>
+                    </div>
+                    </a>
+                </div>
+                <img src="<?php echo $data[$i]['top'];?>" alt="">
+            </div>
+
+            <div class="behind">
+                <img src="<?php echo $data[$i]['bottom'];?>" alt="">
+            </div>
+        </li>
+<?php }?>
+    </ul>
+</div>
+<!--<div class="photomage">-->
+    <!--<div class="photoleft">-->
+        <!--<img src="" alt="">-->
+    <!--</div>-->
+    <!--<div class="photoright">-->
+    <!--</div>-->
+<!--</div>-->
+
+</body>
+<script src="/project/static/js/photo1.js"></script>
+</html>

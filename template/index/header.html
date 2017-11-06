@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="/project/static/css/index1.css">
+    <script src="/project/static/js/jquery-3.2.1.js"></script>
+    <script src="/project/static/js/index1.js"></script>
+</head>
+<body>
+<!--导航-->
+<div class="topdao"></div>
+<ul class="topdaohang">
+    <?php
+    for($i=0;$i<count($nav);$i++){
+    ?>
+    <li><a href="list.php?cid=<?php echo $nav[$i]['cid'];?>"><?php echo $nav[$i]['cname']?></a></li>
+    <?php
+}?>
+    <!--<li><a href="qinqing.html">亲情篇</a></li>-->
+    <!--<li><a href="aiqing.html">爱情篇</a></li>-->
+    <!--<li><a href="youqing.html">友情篇</a></li>-->
+    <li><a href="index1.html">首页</a></li>
+</ul>
